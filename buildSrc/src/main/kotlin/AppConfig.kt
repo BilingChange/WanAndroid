@@ -2,12 +2,11 @@
 /**
  * @description:
  *
- * @author: Y.F
- * @e-mail: yuanfan3@01zhuanche.com
+ * @author: bili
+ * @e-mail: bilingchange@126.com
  * @date: on 2021/9/6    18:48.
  **/
 object AppConfig {
-
 
     val buildConfig = Configs
     /**
@@ -16,25 +15,25 @@ object AppConfig {
     object Configs {
 
         /** 应用 id */
-        const val application_id = "com.bili.wanandroid"
+        const val applicationId = "com.bili.wanandroid"
 
         /** 编译 SDK 版本 */
-        const val compile_sdk_version = 31
+        const val compileSdk = 32
 
         /** 编译工具版本 */
         const val build_tools_version = "30.0.2"
 
         /** 最小支持版本 */
-        const val min_sdk_version = 19
+        const val minSdk = 19
 
         /** 目标支持版本 */
-        const val target_sdk_version = 31
+        const val targetSdk = 32
 
         /** 应用版本号 */
-        const val version_code = 1
+        const val versionCode = 1
 
         /** 应用版本名 */
-        const val version_name = "1.0.0"
+        const val versionName = "1.0.0"
     }
 
     val signingConfig = SigningConfigs
@@ -66,22 +65,40 @@ object AppConfig {
         const val test_mokito_version = "3.3.3"
 
         /** Kotlin 版本 */
-        const val kotlin_version = "1.5.31"
+        const val kotlin_version = "1.7.10"
 
         /** core 版本 */
-        const val core_version = "1.6.0"
+        const val core_version = "1.8.0"
+
+        /** appcompat 版本 */
+        const val appcompat = "1.4.2"
+
+        /** material 版本 */
+        const val material = "1.6.1"
+
+        /** recyclerview 版本 */
+        const val recyclerview = "1.2.1"
+
+        /** constraintlayout 版本 */
+        const val constraintlayout = "2.1.1"
 
         /** room 版本 */
         const val room_version = "2.2.5"
 
+        /** datastore 版本 */
+        const val datastore = "1.0.0"
+
+        /** preference 版本 */
+        const val preference = "1.2.0"
+
         /** paging 版本 */
-        const val paging_version = "3.1.0"
+        const val paging = "3.1.1"
 
         /** navigation 版本 */
-        const val navigation_version = "2.3.5"
+        const val navigation_version = "2.4.2"
 
         /** lifecycle 版本 */
-        const val lifecycle_version = "2.4.0"
+        const val lifecycle_version = "2.5.0"
 
         /** lifecycle 版本 */
         const val lifecycle_extensions = "2.2.0"
@@ -101,17 +118,29 @@ object AppConfig {
         /** glide 版本 */
         const val glide_version = "4.11.0"
 
+        /** fresco 版本 */
+        const val fresco_version = "2.6.0"
+
+        /** banner 版本 */
+        const val banner = "2.2.2"
+
+        /** flexbox 版本 */
+        const val flexbox = "3.0.0"
+
         /** okhttp 版本 */
-        const val okhttp_version = "4.9.0"
+        const val okhttp_version = "4.9.3"
 
         /** retrofit 版本 */
         const val retrofit_version = "2.9.0"
 
         /** smart refresh 版本 */
-        const val smart_refresh_version = "2.0.1"
+        const val smart_refresh_version = "2.0.5"
+
+        /** swiperefreshlayout refresh 版本 */
+        const val swiperefreshlayout = "1.1.0"
 
         /** immersion bar 版本 */
-        const val immersion_bar_version = "3.0.0"
+        const val immersion_bar_version = "3.2.2"
 
         /** doraemon kit 版本 */
         const val doraemon_kit_version = "3.1.8"
@@ -126,7 +155,7 @@ object AppConfig {
         const val moshi_version = "1.11.0"
 
         /** ARouter 版本 */
-        const val arouter_version = "1.5.1"
+        const val arouter_version = "1.5.2"
 
         /** Logger 版本 */
         const val logger_version = "2.2.0"
@@ -149,8 +178,23 @@ object AppConfig {
         /** mmkv 版本 */
         const val tencent_mmkv = "1.2.13"
 
-        /** constraintlayout 版本 */
-        const val constraintlayout_version = "2.1.1"
+        /** hilt 版本 */
+        const val hilt_version = "2.40"
+
+        /** hilt_compiler_version 版本 */
+        const val hilt_compiler_version = "1.0.0"
+
+        /** leakcanary_version 版本 */
+        const val leakcanary_version = "2.9.1"
+    }
+
+    /**
+     * gradle 插件
+     */
+    val classPath = ClassPath
+
+    object ClassPath {
+        const val hilt_plugin = "com.google.dagger:hilt-android-gradle-plugin:${version.hilt_version}"
     }
 
     /**
@@ -185,27 +229,27 @@ object AppConfig {
         /** androidx - legacy */
         const val androidx_legacy = "androidx.legacy:legacy-support-v4:1.0.0"
 
+        /** androidx core */
+        const val androidx_core = "androidx.core:core:${version.core_version}"
+        const val androidx_core_ktx = "androidx.core:core-ktx:${version.core_version}"
+
         /** androidx - appcompat */
-        const val androidx_appcompat = "androidx.appcompat:appcompat:1.3.1"
+        const val androidx_appcompat = "androidx.appcompat:appcompat:${version.appcompat}"
 
         /** androidx material */
-        const val androidx_material = "com.google.android.material:material:1.4.0"
+        const val androidx_material = "com.google.android.material:material:${version.material}"
 
         /** androidx recyclerview */
-        const val androidx_recyclerview = "androidx.recyclerview:recyclerview:1.2.1"
+        const val androidx_recyclerview = "androidx.recyclerview:recyclerview:${version.recyclerview}"
+
+        /** androidx 约束性布局 */
+        const val androidx_constraint = "androidx.constraintlayout:constraintlayout:${version.constraintlayout}"
 
         /** androidx viewpager2 */
         const val androidx_viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
 
-        /** androidx 约束性布局 */
-        const val androidx_constraint = "androidx.constraintlayout:constraintlayout:${version.constraintlayout_version}"
-
         /** androidx multidex */
         const val androidx_multidex = "androidx.multidex:multidex:2.0.1"
-
-        /** androidx core */
-        const val androidx_core = "androidx.core:core:${version.core_version}"
-        const val androidx_core_ktx = "androidx.core:core-ktx:${version.core_version}"
 
         /** androidx activity */
         const val androidx_activity = "androidx.activity:activity:${version.activity_version}"
@@ -220,6 +264,8 @@ object AppConfig {
 
         /** androidx lifecycle */
         const val androidx_lifecycle_extensions = "androidx.lifecycle:lifecycle-extensions:${version.lifecycle_extensions}"
+
+        const val androidx_lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime:${version.lifecycle_version}"
         const val androidx_lifecycle_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:${version.lifecycle_version}"
         const val androidx_lifecycle_viewmodel_ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${version.lifecycle_version}"
         const val androidx_lifecycle_livedata_ktx = "androidx.lifecycle:lifecycle-livedata-ktx:${version.lifecycle_version}"
@@ -232,13 +278,17 @@ object AppConfig {
         const val androidx_room_rxjava2 = "androidx.room:room-rxjava2:${version.room_version}"
         const val androidx_room_testing = "androidx.room:room-testing:${version.room_version}"
 
+        /** dataStore preferences 数据存储 */
+        const val androidx_datastore = "androidx.datastore:datastore-preferences:${version.datastore}"
+        const val androidx_preference = "androidx.preference:preference:${version.preference}"
+
         /** androidx paging */
-        const val androidx_paging_runtime = "androidx.paging:paging-runtime:${version.paging_version}"
-        const val androidx_paging_runtime_ktx = "androidx.paging:paging-runtime-ktx:${version.paging_version}"
-        const val androidx_paging_common = "androidx.paging:paging-common:${version.paging_version}"
-        const val androidx_paging_common_ktx = "androidx.paging:paging-common-ktx:${version.paging_version}"
-        const val androidx_paging_rxjava2 = "androidx.paging:paging-rxjava2:${version.paging_version}"
-        const val androidx_paging_rxjava2_ktx = "androidx.paging:paging-rxjava2-ktx:${version.paging_version}"
+        const val androidx_paging_runtime = "androidx.paging:paging-runtime:${version.paging}"
+        const val androidx_paging_runtime_ktx = "androidx.paging:paging-runtime-ktx:${version.paging}"
+        const val androidx_paging_common = "androidx.paging:paging-common:${version.paging}"
+        const val androidx_paging_common_ktx = "androidx.paging:paging-common-ktx:${version.paging}"
+        const val androidx_paging_rxjava2 = "androidx.paging:paging-rxjava2:${version.paging}"
+        const val androidx_paging_rxjava2_ktx = "androidx.paging:paging-rxjava2-ktx:${version.paging}"
 
         /** androidx navigation */
         const val androidx_navigation_fragment = "androidx.navigation:navigation-fragment:${version.navigation_version}"
@@ -267,7 +317,7 @@ object AppConfig {
          * kotlin Json 序列化
          * - Github: [https://github.com/Kotlin/kotlinx.serialization]
          */
-        const val kotlin_serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1"
+        const val kotlin_serialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3"
 
         /**
          * Gson
@@ -324,12 +374,35 @@ object AppConfig {
         const val glide_compiler = "com.github.bumptech.glide:compiler:${Versions.glide_version}"
 
         /**
+         * fresco
+         * - Github: https://github.com/facebook/fresco
+         */
+        const val fresco = "com.facebook.fresco:fresco:${version.fresco_version}"
+
+        /**
+         * Coil 图片加载
+         * - Github: [https://github.com/coil-kt/coil]
+         */
+        const val coil = "io.coil-kt:coil:${version.coil_version}"
+        const val coil_base = "io.coil-kt:coil-base:${version.coil_version}"
+        const val coil_gif = "io.coil-kt:coil-gif:${version.coil_version}"
+        const val coil_svg = "io.coil-kt:coil-svg:${version.coil_version}"
+        const val coil_video = "io.coil-kt:coil-video:${version.coil_version}"
+
+        /**
+         * 轮播
+         */
+        const val banner = "io.github.youth5201314:banner:${version.banner}"
+
+        const val flexbox = "com.google.android.flexbox:flexbox:${version.flexbox}"
+
+        /**
          * okhttp
          * - Github：[https://github.com/square/okhttp]
          */
         const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp_version}"
+        const val logging_interceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp_version}"
         const val okhttp_urlconnection = "com.squareup.okhttp3:okhttp-urlconnection:${Versions.okhttp_version}"
-        const val okhttp_logging = "com.squareup.okhttp:logging-interceptor:${Versions.okhttp_version}"
 
         /**
          * okio
@@ -347,25 +420,29 @@ object AppConfig {
         const val retrofit_converter_kt = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
 
         /**
+         * 系统下拉刷新库
+         */
+        const val swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:${version.swiperefreshlayout}"
+        /**
          * SmartRefreshLayout
          * - Github：[https://github.com/scwang90/SmartRefreshLayout]
          */
-        const val smart_refresh = "com.scwang.smart:refresh-layout-kernel:${version.smart_refresh_version}"
-        const val smart_refresh_header_classics = "com.scwang.smart:refresh-header-classics:${version.smart_refresh_version}"
-        const val smart_refresh_footer_classics = "com.scwang.smart:refresh-footer-classics:${version.smart_refresh_version}"
+        const val smart_refresh = "io.github.scwang90:refresh-layout-kernel:${version.smart_refresh_version}"
+        const val smart_refresh_header_classics = "io.github.scwang90:refresh-header-classics:${version.smart_refresh_version}"
+        const val smart_refresh_footer_classics = "io.github.scwang90:refresh-footer-classics:${version.smart_refresh_version}"
 
         /**
          * LiveEventBus
          * - Github：[https://github.com/JeremyLiao/LiveEventBus]
          */
-        const val live_event_bus = "com.jeremyliao:live-event-bus-x:1.7.2"
+        const val live_event_bus = "io.github.jeremyliao:live-event-bus-x:1.8.0"
 
         /**
          * 状态栏工具
          * - Github: [https://github.com/gyf-dev/ImmersionBar]
          */
-        const val immersion_bar = "com.gyf.immersionbar:immersionbar:${version.immersion_bar_version}"
-        const val immersion_bar_ktx = "com.gyf.immersionbar:immersionbar-ktx:${version.immersion_bar_version}"
+        const val immersion_bar = "com.geyifeng.immersionbar:immersionba:${version.immersion_bar_version}"
+        const val immersion_bar_ktx = "com.geyifeng.immersionbar:immersionbar-ktx:${version.immersion_bar_version}"
 
         /**
          * MMKV
@@ -377,17 +454,7 @@ object AppConfig {
          * TabLayout
          * - Github: [https://github.com/H07000223/FlycoTabLayout]
          */
-        const val tablayout = "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar"
-
-        /**
-         * Coil 图片加载
-         * - Github: [https://github.com/coil-kt/coil]
-         */
-        const val coil = "io.coil-kt:coil:${version.coil_version}"
-        const val coil_base = "io.coil-kt:coil-base:${version.coil_version}"
-        const val coil_gif = "io.coil-kt:coil-gif:${version.coil_version}"
-        const val coil_svg = "io.coil-kt:coil-svg:${version.coil_version}"
-        const val coil_video = "io.coil-kt:coil-video:${version.coil_version}"
+        const val tablayout = "io.github.h07000223:flycoTabLayout:3.0.0"
 
         /**
          * 换肤支持
@@ -409,16 +476,31 @@ object AppConfig {
          * BaseRecyclerViewAdapterHelper
          * - Github: [https://github.com/CymChad/BaseRecyclerViewAdapterHelper]
          */
-        const val base_rv_helper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version.base_rv_helper}"
+        //const val base_rv_helper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version.base_rv_helper}"
+        //const val base_rv_helper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.8"
+
         const val multitype = "com.drakeet.multitype:multitype:${version.multitype}"
 
         /**
          * AgentWeb
          * - Github: [https://github.com/Justson/AgentWeb]
          */
-        const val agentweb_core = "com.github.Justson.AgentWeb:agentweb-core:v4.1.9-androidx"
-        const val agentweb_filechooser = "com.github.Justson.AgentWeb:agentweb-filechooser:v4.1.9-androidx"
-        const val agentweb_downloader = "com.github.Justson:Downloader:v4.1.9-androidx"
+        const val agentweb_core = "com.github.Justson.AgentWeb:agentweb-core:v5.0.6-androidx"
+        const val agentweb_filechooser = "com.github.Justson.AgentWeb:agentweb-filechooser:v5.0.6-androidx"
+        const val agentweb_downloader = "com.github.Justson:Downloader:v5.0.4-androidx"
+
+        /**
+         * Hilt依赖注入
+         */
+        const val hilt_android = "com.google.dagger:hilt-android:${version.hilt_version}"
+        const val hilt_android_compiler = "com.google.dagger:hilt-android-compiler:${version.hilt_version}"
+        const val hilt_compiler = "androidx.hilt:hilt-compiler:${version.hilt_compiler_version}"
+
+        /**
+         * 内存泄漏检测
+         */
+        const val leakcanary = "com.squareup.leakcanary:leakcanary-android:${version.leakcanary_version}"
+
 
     }
 }

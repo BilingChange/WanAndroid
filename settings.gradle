@@ -16,4 +16,5 @@ rootProject.name = "WanAndroid"
 include ':app'
 include ':lib-base'
 include ':lib-common'
+include ':multitype'
 include ':mvvm'
