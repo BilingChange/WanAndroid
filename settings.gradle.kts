@@ -10,11 +10,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io")
     }
 }
 rootProject.name = "WanAndroid"
-include ':app'
-include ':lib-base'
-include ':lib-common'
-include ':multitype'
-include ':mvvm'
+include(":app")
+include(":lib-base")
+include(":lib-common")
+include(":mvvm")
+include(":multitype")

@@ -37,9 +37,9 @@ internal class OneToManyBuilder<T>(
 
   @SafeVarargs
   @CheckResult(suggest = "#withLinker(Linker)")
-  override fun to(vararg binders: ItemViewBinder<T, *>) = apply {
+  override fun to(vararg delegates: ItemViewBinder<T, *>) = apply {
     @Suppress("UNCHECKED_CAST")
-    this.delegates = binders as Array<ItemViewDelegate<T, *>>
+    this.delegates = delegates as Array<ItemViewDelegate<T, *>>
   }
 
   override fun withLinker(linker: Linker<T>) {

@@ -184,19 +184,22 @@ dependencies {
     implementation(AppConfig.deps.tablayout)
 
     //BRVAH
-    //implementation(AppConfig.deps.base_rv_helper)
+    implementation(AppConfig.deps.base_rv_helper)
 
     //下拉刷新
     implementation(AppConfig.deps.smart_refresh)
     implementation(AppConfig.deps.smart_refresh_header_classics)
     implementation(AppConfig.deps.smart_refresh_footer_classics)
 
+    //BRVAH
+    implementation(AppConfig.deps.base_rv_helper)
+
     //状态栏工具
-    //implementation(AppConfig.deps.immersion_bar)
-    //implementation(AppConfig.deps.immersion_bar_ktx)
+    implementation(AppConfig.deps.immersion_bar)
+    implementation(AppConfig.deps.immersion_bar_ktx)
 
     //webview
-    //implementation(AppConfig.deps.agentweb_core)
+    implementation(AppConfig.deps.agentweb_core)
 
     // LiveEventBus
     implementation(AppConfig.deps.live_event_bus)

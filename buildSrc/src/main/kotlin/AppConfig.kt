@@ -170,7 +170,7 @@ object AppConfig {
         const val scan_kit = "1.1.3.301"
 
         /** BRVAH 版本 */
-        const val base_rv_helper = "3.0.4"
+        const val base_rv_helper = "3.0.8"
 
         /** multitype 版本 */
         const val multitype = "4.2.0"
@@ -441,7 +441,7 @@ object AppConfig {
          * 状态栏工具
          * - Github: [https://github.com/gyf-dev/ImmersionBar]
          */
-        const val immersion_bar = "com.geyifeng.immersionbar:immersionba:${version.immersion_bar_version}"
+        const val immersion_bar = "com.geyifeng.immersionbar:immersionbar:${version.immersion_bar_version}"
         const val immersion_bar_ktx = "com.geyifeng.immersionbar:immersionbar-ktx:${version.immersion_bar_version}"
 
         /**
@@ -476,8 +476,7 @@ object AppConfig {
          * BaseRecyclerViewAdapterHelper
          * - Github: [https://github.com/CymChad/BaseRecyclerViewAdapterHelper]
          */
-        //const val base_rv_helper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version.base_rv_helper}"
-        //const val base_rv_helper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.8"
+        const val base_rv_helper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:${version.base_rv_helper}"
 
         const val multitype = "com.drakeet.multitype:multitype:${version.multitype}"
 
