@@ -28,6 +28,10 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -35,7 +39,9 @@ dependencies {
     implementation AppConfig.deps.androidx_core_ktx
     implementation AppConfig.deps.androidx_appcompat
     implementation AppConfig.deps.androidx_material
+    //api AppConfig.deps.unpeek_livedata
 
+    //api project(path: ':lib-base')
 
     testImplementation AppConfig.deps.test_junit
     androidTestImplementation AppConfig.deps.androidx_test_ext_junit

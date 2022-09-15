@@ -139,7 +139,7 @@ dependencies {
     implementation(AppConfig.deps.androidx_core_ktx)
     implementation(AppConfig.deps.androidx_appcompat)
     implementation(AppConfig.deps.androidx_material)
-    implementation(AppConfig.deps.androidx_constraint)
+    implementation(AppConfig.deps.androidx_constraintlayout)
     implementation(AppConfig.deps.androidx_activity_ktx)
     implementation(AppConfig.deps.androidx_fragment_ktx)
     implementation(AppConfig.deps.androidx_recyclerview)
@@ -161,7 +161,7 @@ dependencies {
 
     //数据存储
     implementation(AppConfig.deps.tencent_mmkv)
-    implementation(AppConfig.deps.androidx_datastore)
+    //implementation(AppConfig.deps.androidx_datastore)
     //implementation(AppConfig.deps.androidx_preference)
 
     //依赖注入
@@ -183,16 +183,10 @@ dependencies {
     implementation(AppConfig.deps.flexbox)
     implementation(AppConfig.deps.tablayout)
 
-    //BRVAH
-    implementation(AppConfig.deps.base_rv_helper)
-
     //下拉刷新
     implementation(AppConfig.deps.smart_refresh)
     implementation(AppConfig.deps.smart_refresh_header_classics)
     implementation(AppConfig.deps.smart_refresh_footer_classics)
-
-    //BRVAH
-    implementation(AppConfig.deps.base_rv_helper)
 
     //状态栏工具
     implementation(AppConfig.deps.immersion_bar)
@@ -200,9 +194,6 @@ dependencies {
 
     //webview
     implementation(AppConfig.deps.agentweb_core)
-
-    // LiveEventBus
-    implementation(AppConfig.deps.live_event_bus)
 
     //内存泄漏检测
     debugImplementation(AppConfig.deps.leakcanary)

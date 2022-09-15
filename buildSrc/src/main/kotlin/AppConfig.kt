@@ -184,6 +184,9 @@ object AppConfig {
         /** hilt_compiler_version 版本 */
         const val hilt_compiler_version = "1.0.0"
 
+        /** unpeek_livedata_version 版本 */
+        const val unpeek_livedata_version = "7.8.0"
+
         /** leakcanary_version 版本 */
         const val leakcanary_version = "2.9.1"
     }
@@ -243,7 +246,7 @@ object AppConfig {
         const val androidx_recyclerview = "androidx.recyclerview:recyclerview:${version.recyclerview}"
 
         /** androidx 约束性布局 */
-        const val androidx_constraint = "androidx.constraintlayout:constraintlayout:${version.constraintlayout}"
+        const val androidx_constraintlayout = "androidx.constraintlayout:constraintlayout:${version.constraintlayout}"
 
         /** androidx viewpager2 */
         const val androidx_viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
@@ -494,6 +497,13 @@ object AppConfig {
         const val hilt_android = "com.google.dagger:hilt-android:${version.hilt_version}"
         const val hilt_android_compiler = "com.google.dagger:hilt-android-compiler:${version.hilt_version}"
         const val hilt_compiler = "androidx.hilt:hilt-compiler:${version.hilt_compiler_version}"
+
+        /**
+         * UnPeek-LiveData
+         * - Github: [https://github.com/KunMinX/UnPeek-LiveData]
+         */
+        const val unpeek_livedata = "com.kunminx.arch:unpeek-livedata:${version.unpeek_livedata_version}"
+
 
         /**
          * 内存泄漏检测

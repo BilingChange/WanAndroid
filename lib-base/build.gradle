@@ -28,15 +28,29 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    api AppConfig.deps.androidx_core_ktx
+    api AppConfig.deps.androidx_appcompat
+    api AppConfig.deps.androidx_material
+    api AppConfig.deps.androidx_constraintlayout
+    api AppConfig.deps.androidx_fragment
+    api AppConfig.deps.androidx_fragment_ktx
 
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    api AppConfig.deps.androidx_lifecycle_common_java8
+    api AppConfig.deps.base_rv_helper
+    api AppConfig.deps.glide
+    api AppConfig.deps.live_event_bus
+    api AppConfig.deps.unpeek_livedata
+    api project(path: ':multitype')
+
+    testImplementation AppConfig.deps.test_junit
+    androidTestImplementation AppConfig.deps.androidx_test_ext_junit
+    androidTestImplementation AppConfig.deps.androidx_test_espresso_core
 }
