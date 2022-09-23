@@ -44,6 +44,8 @@ dependencies {
     api AppConfig.deps.androidx_fragment_ktx
 
     api AppConfig.deps.androidx_lifecycle_common_java8
+    api(AppConfig.deps.immersion_bar)
+    api(AppConfig.deps.immersion_bar_ktx)
     api AppConfig.deps.base_rv_helper
     api AppConfig.deps.glide
     api AppConfig.deps.live_event_bus

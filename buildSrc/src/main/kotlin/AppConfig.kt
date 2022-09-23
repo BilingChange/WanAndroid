@@ -1,6 +1,6 @@
 
 /**
- * @description:
+ * @description:基础库版本配置
  *
  * @author: bili
  * @e-mail: bilingchange@126.com
@@ -62,13 +62,16 @@ object AppConfig {
     object Versions {
 
         /** 测试 mokito 版本 */
-        const val test_mokito_version = "3.3.3"
+        const val test_mokito = "3.3.3"
 
         /** Kotlin 版本 */
         const val kotlin_version = "1.7.10"
 
         /** core 版本 */
         const val core_version = "1.8.0"
+
+        /** coroutines 版本 */
+        const val coroutines = "1.6.1"
 
         /** appcompat 版本 */
         const val appcompat = "1.4.2"
@@ -83,7 +86,7 @@ object AppConfig {
         const val constraintlayout = "2.1.1"
 
         /** room 版本 */
-        const val room_version = "2.2.5"
+        const val room = "2.2.5"
 
         /** datastore 版本 */
         const val datastore = "1.0.0"
@@ -95,19 +98,19 @@ object AppConfig {
         const val paging = "3.1.1"
 
         /** navigation 版本 */
-        const val navigation_version = "2.4.2"
+        const val navigation = "2.4.2"
 
         /** lifecycle 版本 */
-        const val lifecycle_version = "2.5.0"
+        const val lifecycle = "2.5.0"
 
         /** lifecycle 版本 */
         const val lifecycle_extensions = "2.2.0"
 
         /** activity 版本 */
-        const val activity_version = "1.3.1"
+        const val activity = "1.3.1"
 
         /** fragment 版本 */
-        const val fragment_version = "1.3.1"
+        const val fragment = "1.3.1"
 
         /** startup-runtime 版本 */
         const val startup_runtime = "1.1.0"
@@ -209,8 +212,8 @@ object AppConfig {
 
         /** 测试 */
         const val test_junit = "junit:junit:4.13.2"
-        const val test_mokito_inline = "org.mockito:mockito-inline:${version.test_mokito_version}"
-        const val test_mokito_android = "org.mockito:mockito-android:${version.test_mokito_version}"
+        const val test_mokito_inline = "org.mockito:mockito-inline:${version.test_mokito}"
+        const val test_mokito_android = "org.mockito:mockito-android:${version.test_mokito}"
         const val test_uiautomator_v18 = "com.android.support.test.uiautomator:uiautomator-v18:2.1.3"
         const val androidx_test_ext_junit = "androidx.test.ext:junit:1.1.3"
         const val androidx_test_rules = "androidx.test:rules:1.2.0"
@@ -255,12 +258,12 @@ object AppConfig {
         const val androidx_multidex = "androidx.multidex:multidex:2.0.1"
 
         /** androidx activity */
-        const val androidx_activity = "androidx.activity:activity:${version.activity_version}"
-        const val androidx_activity_ktx = "androidx.activity:activity-ktx:${version.activity_version}"
+        const val androidx_activity = "androidx.activity:activity:${version.activity}"
+        const val androidx_activity_ktx = "androidx.activity:activity-ktx:${version.activity}"
 
         /** androidx fragment */
-        const val androidx_fragment = "androidx.fragment:fragment:${version.fragment_version}"
-        const val androidx_fragment_ktx = "androidx.fragment:fragment-ktx:${version.fragment_version}"
+        const val androidx_fragment = "androidx.fragment:fragment:${version.fragment}"
+        const val androidx_fragment_ktx = "androidx.fragment:fragment-ktx:${version.fragment}"
 
         /** startup-runtime */
         const val startup_runtime = "androidx.startup:startup-runtime:${version.startup_runtime}"
@@ -268,18 +271,18 @@ object AppConfig {
         /** androidx lifecycle */
         const val androidx_lifecycle_extensions = "androidx.lifecycle:lifecycle-extensions:${version.lifecycle_extensions}"
 
-        const val androidx_lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime:${version.lifecycle_version}"
-        const val androidx_lifecycle_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:${version.lifecycle_version}"
-        const val androidx_lifecycle_viewmodel_ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${version.lifecycle_version}"
-        const val androidx_lifecycle_livedata_ktx = "androidx.lifecycle:lifecycle-livedata-ktx:${version.lifecycle_version}"
-        const val androidx_lifecycle_common_java8 = "androidx.lifecycle:lifecycle-common-java8:${version.lifecycle_version}"
+        const val androidx_lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime:${version.lifecycle}"
+        const val androidx_lifecycle_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:${version.lifecycle}"
+        const val androidx_lifecycle_viewmodel_ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${version.lifecycle}"
+        const val androidx_lifecycle_livedata_ktx = "androidx.lifecycle:lifecycle-livedata-ktx:${version.lifecycle}"
+        const val androidx_lifecycle_common_java8 = "androidx.lifecycle:lifecycle-common-java8:${version.lifecycle}"
 
         /** androidx room */
-        const val androidx_room_runtime = "androidx.room:room-runtime:${version.room_version}"
-        const val androidx_room_compiler = "androidx.room:room-compiler:${version.room_version}"
-        const val androidx_room_ktx = "androidx.room:room-ktx:${version.room_version}"
-        const val androidx_room_rxjava2 = "androidx.room:room-rxjava2:${version.room_version}"
-        const val androidx_room_testing = "androidx.room:room-testing:${version.room_version}"
+        const val androidx_room_runtime = "androidx.room:room-runtime:${version.room}"
+        const val androidx_room_compiler = "androidx.room:room-compiler:${version.room}"
+        const val androidx_room_ktx = "androidx.room:room-ktx:${version.room}"
+        const val androidx_room_rxjava2 = "androidx.room:room-rxjava2:${version.room}"
+        const val androidx_room_testing = "androidx.room:room-testing:${version.room}"
 
         /** dataStore preferences 数据存储 */
         const val androidx_datastore = "androidx.datastore:datastore-preferences:${version.datastore}"
@@ -294,14 +297,14 @@ object AppConfig {
         const val androidx_paging_rxjava2_ktx = "androidx.paging:paging-rxjava2-ktx:${version.paging}"
 
         /** androidx navigation */
-        const val androidx_navigation_fragment = "androidx.navigation:navigation-fragment:${version.navigation_version}"
-        const val androidx_navigation_fragment_ktx = "androidx.navigation:navigation-fragment-ktx:${version.navigation_version}"
-        const val androidx_navigation_ui = "androidx.navigation:navigation-ui:${version.navigation_version}"
-        const val androidx_navigation_ui_ktx = "androidx.navigation:navigation-ui-ktx:${version.navigation_version}"
-        const val androidx_navigation_common = "androidx.navigation:navigation-common:${version.navigation_version}"
-        const val androidx_navigation_common_ktx = "androidx.navigation:navigation-common-ktx:${version.navigation_version}"
-        const val androidx_navigation_runtime = "androidx.navigation:navigation-runtime:${version.navigation_version}"
-        const val androidx_navigation_runtime_ktx = "androidx.navigation:navigation-runtime-ktx:${version.navigation_version}"
+        const val androidx_navigation_fragment = "androidx.navigation:navigation-fragment:${version.navigation}"
+        const val androidx_navigation_fragment_ktx = "androidx.navigation:navigation-fragment-ktx:${version.navigation}"
+        const val androidx_navigation_ui = "androidx.navigation:navigation-ui:${version.navigation}"
+        const val androidx_navigation_ui_ktx = "androidx.navigation:navigation-ui-ktx:${version.navigation}"
+        const val androidx_navigation_common = "androidx.navigation:navigation-common:${version.navigation}"
+        const val androidx_navigation_common_ktx = "androidx.navigation:navigation-common-ktx:${version.navigation}"
+        const val androidx_navigation_runtime = "androidx.navigation:navigation-runtime:${version.navigation}"
+        const val androidx_navigation_runtime_ktx = "androidx.navigation:navigation-runtime-ktx:${version.navigation}"
 
         /**
          * Logger 日志打印
@@ -314,7 +317,7 @@ object AppConfig {
          * - 指南：[https://www.kotlincn.net/docs/reference/coroutines/coroutines-guide.html]
          * - Github：[https://github.com/Kotlin/kotlinx.coroutines]
          */
-        const val kotlin_coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+        const val coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${version.coroutines}"
 
         /**
          * kotlin Json 序列化

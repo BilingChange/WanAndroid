@@ -155,6 +155,10 @@ dependencies {
     implementation(AppConfig.deps.androidx_navigation_fragment_ktx)
     implementation(AppConfig.deps.androidx_navigation_ui_ktx)
 
+    //协程
+    implementation(AppConfig.deps.coroutines_core)
+
+    implementation(project(":lib-base"))
     //Arouter
     implementation(AppConfig.deps.arouter_api)
     kapt(AppConfig.deps.arouter_compiler)
@@ -184,17 +188,14 @@ dependencies {
     implementation(AppConfig.deps.tablayout)
 
     //下拉刷新
+    implementation(AppConfig.deps.swiperefreshlayout)
+
     implementation(AppConfig.deps.smart_refresh)
     implementation(AppConfig.deps.smart_refresh_header_classics)
     implementation(AppConfig.deps.smart_refresh_footer_classics)
 
-    //状态栏工具
-    implementation(AppConfig.deps.immersion_bar)
-    implementation(AppConfig.deps.immersion_bar_ktx)
-
     //webview
     implementation(AppConfig.deps.agentweb_core)
-
     //内存泄漏检测
     debugImplementation(AppConfig.deps.leakcanary)
 

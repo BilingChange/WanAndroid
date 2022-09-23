@@ -1,3 +1,70 @@
 <resources>
     <string name="app_name">WanAndroid</string>
+    <string name="app_version">版本号: %s(%s)</string>
+
+    <!--首页导航-->
+    <string name="nav_home">首页</string>
+    <string name="nav_project">项目</string>
+    <string name="nav_navigator">导航</string>
+    <string name="nav_search">搜索</string>
+    <string name="nav_we_chat_group">公众号</string>
+    <string name="nav_profile">我</string>
+
+    <!--文章详情按钮-->
+    <string name="profile_item_title_message">消息中心</string>
+    <string name="profile_item_title_share">分享文章</string>
+    <string name="profile_item_title_favorite">收藏文章</string>
+
+    <string name="profile_item_title_tools">工具列表</string>
+    <string name="profile_user_name">用户名: %s</string>
+    <string name="profile_user_id">id: %s</string>
+    <string name="profile_user_coin_and_rank">积分: %s 等级: %s 排名: %s</string>
+    <string name="user_coin_level">等级: %s</string>
+    <string name="user_coin_rank">排名: %s</string>
+
+    <string name="share_count_description">分享了%s篇文章</string>
+    <string name="classify_chapter_name">分类·%s</string>
+    <string name="author_name">作者·%s</string>
+    <string name="article_tag_new">新</string>
+    <string name="article_tag_top">置顶</string>
+    <string name="empty_data_tips">暂无数据</string>
+
+    <!--热搜-->
+    <string name="search_hint">搜索关键词</string>
+    <string name="search_hotkey_title">搜索热词</string>
+    <string name="search_history_title">搜索历史</string>
+
+    <!--登录注册-->
+    <string name="account_need_login">请先登录！</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密码</string>
+    <string name="login_confirm_password">确认密码</string>
+    <string name="not_login">未登录</string>
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="register">注册</string>
+    <string name="register_success">注册成功！</string>
+    <string name="content_description_coin_rules">积分规则</string>
+    <string name="content_description_coin_ranking">积分排行榜</string>
+    <string name="title_coin_ranking">积分排行榜</string>
+
+    <!--设置-->
+    <string name="preference_category_normal">通用</string>
+    <string name="preference_title_dark_mode">深色模式</string>
+    <string name="preference_list_dark_mode_off">关闭</string>
+    <string name="preference_list_dark_mode_on">开启</string>
+    <string name="preference_list_dark_mode_system">跟随系统</string>
+    <string name="preference_category_others">其他</string>
+    <string name="preference_title_about">关于</string>
+    <string name="preference_title_clean_cache">清理缓存</string>
+    <string name="preference_title_home_website">源代码</string>
+    <string name="setting">设置</string>
+    <string name="collect">收藏</string>
+    <string name="web_action_menu_share">分享</string>
+    <string name="web_action_menu_refresh">刷新</string>
+    <string name="web_action_menu_open_outside">浏览器打开</string>
+    <string name="preference_title_dynamic_color">动态主题色</string>
+    <string name="preference_summary_dynamic_color">应用动态跟随系统主题色(操作后重启应用生效，仅Android 12及以上版本可开启)</string>
+    <string name="item_footer_not_more">没有更多数据了</string>
+    <string name="retry">重试</string>
 </resources>

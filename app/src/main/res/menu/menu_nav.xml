@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/action_square"
+        android:enabled="true"
+        android:icon="@drawable/icon_category"
+        android:title="@string/nav_project" />
+    <item
+        android:id="@+id/action_wechat"
+        android:enabled="true"
+        android:icon="@drawable/icon_navigation"
+        android:title="@string/nav_navigator" />
+    <item
+        android:id="@+id/action_system"
+        android:enabled="true"
+        android:icon="@drawable/icon_groups"
+        android:title="@string/nav_we_chat_group" />
+</menu>
