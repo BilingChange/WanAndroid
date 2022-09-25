@@ -136,28 +136,6 @@ android {
 
 dependencies {
     //implementation(project(mapOf("path" to ":multitype")))
-    implementation(AppConfig.deps.androidx_core_ktx)
-    implementation(AppConfig.deps.androidx_appcompat)
-    implementation(AppConfig.deps.androidx_material)
-    implementation(AppConfig.deps.androidx_constraintlayout)
-    implementation(AppConfig.deps.androidx_activity_ktx)
-    implementation(AppConfig.deps.androidx_fragment_ktx)
-    implementation(AppConfig.deps.androidx_recyclerview)
-    implementation(AppConfig.deps.swiperefreshlayout)
-    implementation(AppConfig.deps.androidx_paging_runtime_ktx)
-
-    //lifecycle
-    implementation(AppConfig.deps.androidx_lifecycle_ktx)
-    implementation(AppConfig.deps.androidx_lifecycle_viewmodel_ktx)
-    implementation(AppConfig.deps.androidx_lifecycle_livedata_ktx)
-
-    //navigation
-    implementation(AppConfig.deps.androidx_navigation_fragment_ktx)
-    implementation(AppConfig.deps.androidx_navigation_ui_ktx)
-
-    //协程
-    implementation(AppConfig.deps.coroutines_core)
-
     implementation(project(":lib-base"))
     //Arouter
     implementation(AppConfig.deps.arouter_api)
