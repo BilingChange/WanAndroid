@@ -18,9 +18,9 @@ class SaveCookieInterceptor : Interceptor {
         val requestUrl = request.url.toString()
         val domain = request.url.host
         // set-cookie maybe has multi, login to save cookie
-        if ((requestUrl.contains(HttpConstant.SAVE_USER_LOGIN_KEY)
-                    || requestUrl.contains(HttpConstant.SAVE_USER_REGISTER_KEY))
-            && response.headers(HttpConstant.SET_COOKIE_KEY).isNotEmpty()
+        if ((requestUrl.contains(HttpConstant.SAVE_USER_LOGIN_KEY) ||
+             requestUrl.contains(HttpConstant.SAVE_USER_REGISTER_KEY)) &&
+             response.headers(HttpConstant.SET_COOKIE_KEY).isNotEmpty()
         ) {
             val cookies = response.headers(HttpConstant.SET_COOKIE_KEY)
             val cookie = HttpConstant.encodeCookie(cookies)

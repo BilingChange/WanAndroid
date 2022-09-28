@@ -160,6 +160,7 @@ dependencies {
     implementation(AppConfig.deps.kotlin_serialization)
 
     //UI
+    implementation(AppConfig.deps.fresco)
     implementation(AppConfig.deps.glide)
     implementation(AppConfig.deps.banner)
     implementation(AppConfig.deps.flexbox)

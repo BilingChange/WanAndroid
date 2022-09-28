@@ -70,6 +70,7 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity(),
   fun initImmersionBar(){
     ImmersionBar.with(this)
       .statusBarDarkFont(true)
+      .barColor(R.color.transparent)
       .navigationBarColor(R.color.white)
       .navigationBarDarkIcon(true)
       .init()

@@ -25,7 +25,7 @@ abstract class BaseVmActivity<VB : ViewBinding, VM : BaseViewModel> : BaseActivi
     protected val viewModel: VM by lazy {
         val type = javaClass.genericSuperclass
         val vmClass: Class<VM> = type!!.saveAs<ParameterizedType>().actualTypeArguments[1].saveAs()
-        ViewModelProvider(this, ViewModelProvider.NewInstanceFactory()).get(vmClass)
+        ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[vmClass]
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,8 +33,9 @@ abstract class BaseVmActivity<VB : ViewBinding, VM : BaseViewModel> : BaseActivi
         setContentViewWithBinding()
         initViewModel()
         initObserver()
+        initData()
+        initListener()
     }
-
 
     private fun initViewModel() {
         viewModel.application = application.saveAs()

@@ -13,6 +13,9 @@ import okhttp3.HttpUrl
  **/
 class CookieManager : CookieJar {
 
+    /**
+     * 保存Cookie文件
+     */
     private val COOKIE_STORE = PersistentCookieStore()
 
     override fun saveFromResponse(url: HttpUrl, cookies: List<Cookie>) {

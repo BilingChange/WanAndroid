@@ -10,6 +10,7 @@ import java.net.UnknownHostException
 import java.text.ParseException
 
 class ExceptionHandle {
+
     companion object {
         private const val TAG = "ExceptionHandle"
         var errorCode = ErrorStatus.UNKNOWN_ERROR

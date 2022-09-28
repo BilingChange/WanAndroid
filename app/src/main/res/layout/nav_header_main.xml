@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_view_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/launcher_foreground_android_color"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingTop="@dimen/dp_36"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingBottom="@dimen/dp_10"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/iv_rank"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_gravity="end"
+        app:srcCompat="@drawable/ic_left_rank" />
+
+    <com.bili.wanandroid.widget.CircleImageView
+        android:layout_width="@dimen/avatar_width"
+        android:layout_height="@dimen/avatar_height"
+        android:layout_gravity="center_horizontal"
+        app:borderColor="@color/white"
+        app:borderWidth="2dp"
+        app:srcCompat="@drawable/ic_left_avater_default"
+        app:type="circle" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="去登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_id"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="等级"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_user_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dp_8"
+            android:text="排名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_user_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,53 +1,118 @@
 package com.bili.wanandroid.constant
 
-import android.preference.PreferenceManager
-import androidx.appcompat.app.AppCompatDelegate
-import com.bili.base.BaseApp
-
 /**
  * 设置页常量
  */
 object Constants {
-    private const val KEY_NORMAL_CATEGORY_DYNAMIC_COLORS = "normal_dynamic_colors"
-    private const val KEY_NORMAL_CATEGORY_DARK_MODE = "normal_dark_mode"
-    private const val DARK_MODE_ON = "on"
-    private const val DARK_MODE_OFF = "off"
-    private const val DARK_MODE_FOLLOW_SYSTEM = "system"
 
     const val KEY_OTHER_CATEGORY_ABOUT = "other_about"
     const val KEY_OTHER_CATEGORY_GITHUB = "other_github"
     const val KEY_OTHER_CATEGORY_LOGOUT = "other_logout"
 
     /**
-     * 是否开启深色模式
+     * 整数常量 0
      */
-    @AppCompatDelegate.NightMode
-    val preferenceDarkMode: Int
-        get() {
-            return getNightMode(
-                PreferenceManager.getDefaultSharedPreferences(BaseApp.context)
-                    .getString(KEY_NORMAL_CATEGORY_DARK_MODE, DARK_MODE_FOLLOW_SYSTEM)
-                    ?: DARK_MODE_FOLLOW_SYSTEM
-            )
-        }
+    const val NONE = -1
 
     /**
-     * 夜间模式
+     * 整数常量 0
      */
-    fun getNightMode(value: String) =
-        when (value) {
-            DARK_MODE_ON -> AppCompatDelegate.MODE_NIGHT_YES
-            DARK_MODE_OFF -> AppCompatDelegate.MODE_NIGHT_NO
-            else -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
-        }
+    const val ZERO_INT = 0
 
     /**
-     * 是否开启动态主题色
+     * 整数常量 1
      */
-    val preferenceDynamicColors: Boolean
-        get() {
-            return PreferenceManager.getDefaultSharedPreferences(BaseApp.context)
-                .getBoolean(KEY_NORMAL_CATEGORY_DYNAMIC_COLORS, true)
-        }
+    const val ONE_INT = 1
+
+    /**
+     * 整数常量 2
+     */
+    const val TWO_INT = 2
+
+    /**
+     * 整数常量 3
+     */
+    const val THREE_INT = 3
+
+    /**
+     * 整数常量 4
+     */
+    const val FOUR_INT = 4
+
+    /**
+     * 整数常量 5
+     */
+    const val FIVE_INT = 5
+
+    /**
+     * 整数常量 6
+     */
+    const val SIX_INT = 6
+
+    /**
+     * 整数常量 7
+     */
+    const val SEVEN_INT = 7
+
+    /**
+     * 整数常量 8
+     */
+    const val EIGHT_INT = 8
+
+    /**
+     * 整数常量 9
+     */
+    const val NINE_INT = 9
+
+    /**
+     * 整数常量10
+     */
+    const val TEN_INT = 10
+
+    /**
+     * 字符串常量 -1
+     */
+    const val MINUS_ONE = "-1"
+
+    /**
+     * 字符串常量 0
+     */
+    const val ZERO_STR = "0"
+
+    /**
+     * 字符串常量 1
+     */
+    const val ONE_STR = "1"
+
+    /**
+     * 字符串常量 2
+     */
+    const val TWO_STR = "2"
+
+    /**
+     * 字符串常量 3
+     */
+    const val THREE_STR = "3"
+
+    /**
+     * 字符串常量 4
+     */
+    const val FOUR_STR = "4"
+
+    /**
+     * 字符串常量 5
+     */
+    const val FIVE_STR = "5"
+
+    /**
+     * 字符串常量 6
+     */
+    const val SIX_STR = "6"
+
+    /**
+     * 字符串常量 7
+     */
+    const val SEVEN_STR = "7"
+
 
 }

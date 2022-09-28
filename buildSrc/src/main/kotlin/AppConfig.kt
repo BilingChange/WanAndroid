@@ -18,16 +18,16 @@ object AppConfig {
         const val applicationId = "com.bili.wanandroid"
 
         /** 编译 SDK 版本 */
-        const val compileSdk = 32
+        const val compileSdk = 33
 
         /** 编译工具版本 */
         const val build_tools_version = "30.0.2"
 
         /** 最小支持版本 */
-        const val minSdk = 19
+        const val minSdk = 21
 
         /** 目标支持版本 */
-        const val targetSdk = 32
+        const val targetSdk = 33
 
         /** 应用版本号 */
         const val versionCode = 1

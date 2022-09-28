@@ -81,5 +81,4 @@ abstract class BaseVmFragment<VB : ViewBinding,VM : BaseViewModel> : BaseFragmen
       ToastUtils.show(it)
     }
   }
-
 }
