@@ -21,7 +21,7 @@ object HttpConstant {
     const val BASE_URL = "https://www.wanandroid.com"
 
     const val COLLECTIONS_WEBSITE = "lg/collect"
-    const val UNCOLLECTIONS_WEBSITE = "lg/uncollect"
+    const val UN_COLLECTIONS_WEBSITE = "lg/uncollect"
     const val ARTICLE_WEBSITE = "article"
     const val TODO_WEBSITE = "lg/todo"
     const val COIN_WEBSITE = "lg/coin"

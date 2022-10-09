@@ -49,8 +49,8 @@ class CookieManager : CookieJar {
     /**
      * 获取cookies
      *
-     * @return List<Cookie>
-    </Cookie> */
+     * @return List<Cookie></Cookie>
+     * */
     fun getCookies(): List<Cookie> {
         return COOKIE_STORE.getCookies()
     }

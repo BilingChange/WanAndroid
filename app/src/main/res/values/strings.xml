@@ -25,7 +25,7 @@
 
     <!--behavior-->
     <string name="behavior_bottom_navigation">com.bili.wanandroid.widget.behavior.BottomNavigationBehavior</string>
-    <string name="behavior_floating_action">com.bili.wanandroid.widget.behavior.ScaleDownShowBehavior</string>
+    <string name="behavior_floating_action">com.bili.wanandroid.widget.behavior.FloatingButtonBehavior</string>
 
     <!--文章详情按钮-->
     <string name="profile_item_title_message">消息中心</string>
